@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=390, initial-scale=1">
+<style>::-webkit-scrollbar{width:0;height:0;display:none}html{scrollbar-width:none;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%}</style>
+<title>iLab — статус заказа</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- iLab v7 · статус заказа: исходник Qomek в синей гамме, экономия к другим лабораториям после оплаты. -->
+
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0}
+a{color:#0066B3}a:hover{color:#00508C}
+</style>
+</helmet>
+<div style="width: 390px; height: 2358px; box-sizing: border-box; background: #F2F6FB; font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; color: #1F1F1F; position: relative; overflow: hidden; display: flex; flex-direction: column;">
+
+  
+  <header style="flex: none; display: flex; align-items: center; gap: 6px; height: 48px; padding: 8px 16px 8px 16px; box-sizing: content-box;">
+    <button type="button" aria-label="Назад" style="flex: none; width: 48px; height: 48px; padding: 0; border: 0; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+      <svg width="28" height="28" aria-hidden="true" style="display: block; flex: none;" viewBox="0 0 24 24" fill="none" stroke="#1F1F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="m15 18-6-6 6-6" /></svg>
+    </button>
+    <div style="flex: 1; min-width: 0; display: flex; justify-content: center;">
+      
+      <span style="display:inline-flex;flex-direction:column;align-items:flex-start;"><svg width="77.9" height="24.0" viewBox="0 0 531.5 163.8" aria-hidden="true" style="display:block;flex:none"><g transform="scale(2.56) translate(0.00 -17.20)"><path fill="#0066B3" d="M151.54 79.2Q150.69 79.2 150 78.56Q149.31 77.91 149.31 76.97V21.43Q149.31 20.49 150 19.84Q150.69 19.2 151.54 19.2H178.89Q186.69 19.2 191.66 21.26Q196.63 23.31 199.03 27.17Q201.43 31.03 201.43 36.69Q201.43 39.6 200.27 41.87Q199.11 44.14 197.49 45.64Q195.86 47.14 194.4 47.83Q197.74 49.29 200.23 52.76Q202.71 56.23 202.71 60.69Q202.71 66.69 200.01 70.8Q197.31 74.91 192.21 77.06Q187.11 79.2 179.74 79.2ZM82.37 79.2Q81.6 79.2 81.09 78.64Q80.57 78.09 80.57 77.31Q80.57 76.97 80.66 76.71L100.2 21.86Q100.54 20.91 101.4 20.06Q102.26 19.2 103.8 19.2H119.49Q121.11 19.2 121.97 20.06Q122.83 20.91 123.09 21.86L142.71 76.71Q142.8 76.97 142.8 77.31Q142.8 78.09 142.24 78.64Q141.69 79.2 140.91 79.2H127.71Q126.26 79.2 125.57 78.51Q124.89 77.83 124.63 77.23L121.97 70.03H101.31L98.66 77.23Q98.4 77.83 97.76 78.51Q97.11 79.2 95.57 79.2ZM34.46 79.2Q33.6 79.2 32.91 78.56Q32.23 77.91 32.23 76.97V21.43Q32.23 20.49 32.91 19.84Q33.6 19.2 34.46 19.2H48.69Q49.63 19.2 50.31 19.84Q51 20.49 51 21.43V63.94H75.77Q76.71 63.94 77.4 64.59Q78.09 65.23 78.09 66.17V76.97Q78.09 77.91 77.4 78.56Q76.71 79.2 75.77 79.2ZM167.74 66.26H177.77Q180.69 66.26 182.06 64.5Q183.43 62.74 183.43 60.6Q183.43 58.37 181.97 56.7Q180.51 55.03 177.77 55.03H167.74ZM167.74 42.43H176.91Q179.66 42.43 180.94 40.89Q182.23 39.34 182.23 37.29Q182.23 35.23 180.94 33.69Q179.66 32.14 176.91 32.14H167.74ZM105.26 55.54H118.03L111.6 36.26Z"/><path fill="#DCEAF8" fill-rule="evenodd" d="M5.64 31.7H20.5V53.86Q13.07 55.13 5.64 53.86Z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M7.28 37.41C7.28 36.8 7.77 36.3 8.39 36.3C9.01 36.3 9.5 36.8 9.5 37.41V52.15Q8.39 52.06 7.28 51.91Z"/><path fill="#0066B3" fill-rule="evenodd" d="M20.5 53.86V70.57C20.5 74.67 17.18 78 13.07 78C8.97 78 5.64 74.67 5.64 70.57V53.86Q13.07 55.13 20.5 53.86Z"/><path fill="#5FA4E4" fill-rule="evenodd" d="M20.5 53.86V54.88Q13.07 56.15 5.64 54.88V53.86Q13.07 55.13 20.5 53.86Z"/><path fill="#3A8CD6" fill-rule="evenodd" d="M9.5 56.55V70.22C9.5 70.92 8.94 71.48 8.24 71.48C7.54 71.48 6.98 70.92 6.98 70.22V56.27Q8.24 56.45 9.5 56.55Z"/><path fill="#0066B3" fill-rule="evenodd" d="M3.94 32.2H5.64V70.57C5.64 74.67 8.97 78 13.07 78C17.18 78 20.5 74.67 20.5 70.57V32.2H22.2V70.57C22.2 75.61 18.11 79.7 13.07 79.7C8.03 79.7 3.94 75.61 3.94 70.57Z"/><path fill="#0066B3" fill-rule="evenodd" d="M6.66 19.2H19.48C21.36 19.2 22.88 20.72 22.88 22.6V25.12C22.88 25.7 22.74 26.24 22.48 26.72H22.81C23.7 26.72 24.41 27.44 24.41 28.32V31.6C24.41 32.48 23.7 33.2 22.81 33.2H3.33C2.45 33.2 1.73 32.48 1.73 31.6V28.32C1.73 27.44 2.45 26.72 3.33 26.72H3.66C3.4 26.24 3.26 25.7 3.26 25.12V22.6C3.26 20.72 4.78 19.2 6.66 19.2Z"/><path fill="#FFEA3D" fill-rule="evenodd" d="M6.66 20.39H17.61V26.72H5.14C4.71 26.32 4.45 25.75 4.45 25.12V22.6C4.45 21.38 5.44 20.39 6.66 20.39ZM3.42 27.91H17.61V32.01H3.42C3.14 32.01 2.92 31.79 2.92 31.51V28.41C2.92 28.13 3.14 27.91 3.42 27.91Z"/><path fill="#E6CB24" fill-rule="evenodd" d="M5.14 26.72H17.61V20.39H19.48C20.7 20.39 21.69 21.38 21.69 22.6V25.12C21.69 26.34 20.7 27.33 19.48 27.33H6.66C6.07 27.33 5.53 27.1 5.14 26.72ZM17.61 32.01V27.91H22.72C23 27.91 23.22 28.13 23.22 28.41V31.51C23.22 31.79 23 32.01 22.72 32.01H17.61Z"/></g></svg></span>
+    </div>
+    <div style="flex: none; width: 48px; height: 48px;"></div>
+  </header>
+
+  
+  <main style="flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 12px; padding-bottom: 118px;">
+
+    
+    <section aria-label="Статус заказа" style="background: #FFFFFF; border-radius: 24px; overflow: hidden;">
+      <div style="padding: 16px; text-align: center;">
+        <div style="display: flex; justify-content: center; align-items: flex-start; gap: 6px;">
+          <svg width="30" height="30" aria-hidden="true" style="display: block; flex: none;" viewBox="0 0 24 24" fill="none" stroke="#008A44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" fill="#008A44" stroke="none"/><path d="m8.5 12.5 2.5 2.5 5-5" stroke="#FFFFFF"/></svg>
+          <h1 style="margin: 0; font-size: 24px; line-height: 30px; font-weight: 600; color: #00703C;">Оплачено</h1>
+        </div>
+      </div>
+      <div style="border-top: 0.5px solid #D1DAE3; padding: 16px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="flex: 1; min-width: 0; font-size: 16px; line-height: 22px; font-weight: 700; color: #1F1F1F; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Касымова Айгуль Ермековна</span>
+          <span style="flex: none; font-size: 12px; line-height: 16px; font-weight: 400; color: #647180;">Дата: 12.11.2026</span>
+        </div>
+      </div>
+      
+      <button type="button" aria-label="Скопировать номер заказа iLab-48213" onClick="{{copyNo}}" style="display: block; width: 100%; margin: 0; padding: 0; border: 0; background: #FFFFFF; font-family: inherit; text-align: center; cursor: pointer;">
+        <span style="display: block; font-size: 14px; line-height: 20px; font-weight: 400; color: #647180;">iLab-48213</span>
+        <span style="display: block; padding: 16px 32px;">
+          <svg width="326" height="56" viewBox="0 0 101 56" preserveAspectRatio="none" shape-rendering="crispEdges" fill="#1F1F1F" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display: block; flex: none; width: 100%; height: 56px;"><rect x="0" y="0" width="2" height="56"></rect><rect x="3" y="0" width="1" height="56"></rect><rect x="6" y="0" width="3" height="56"></rect><rect x="11" y="0" width="3" height="56"></rect><rect x="16" y="0" width="1" height="56"></rect><rect x="19" y="0" width="2" height="56"></rect><rect x="22" y="0" width="2" height="56"></rect><rect x="26" y="0" width="1" height="56"></rect><rect x="30" y="0" width="1" height="56"></rect><rect x="33" y="0" width="3" height="56"></rect><rect x="38" y="0" width="2" height="56"></rect><rect x="42" y="0" width="1" height="56"></rect><rect x="44" y="0" width="1" height="56"></rect><rect x="48" y="0" width="2" height="56"></rect><rect x="52" y="0" width="1" height="56"></rect><rect x="55" y="0" width="2" height="56"></rect><rect x="60" y="0" width="1" height="56"></rect><rect x="62" y="0" width="1" height="56"></rect><rect x="66" y="0" width="1" height="56"></rect><rect x="69" y="0" width="3" height="56"></rect><rect x="74" y="0" width="2" height="56"></rect><rect x="77" y="0" width="3" height="56"></rect><rect x="81" y="0" width="2" height="56"></rect><rect x="84" y="0" width="1" height="56"></rect><rect x="88" y="0" width="2" height="56"></rect><rect x="93" y="0" width="3" height="56"></rect><rect x="97" y="0" width="1" height="56"></rect><rect x="99" y="0" width="2" height="56"></rect></svg>
+        </span>
+      </button>
+    </section>
+
+    
+    <section aria-label="Добавить из этой же пробы" style="background: #FFFFFF; border-radius: 24px; overflow: hidden; padding: 14px 0 14px 16px;">
+      <div style="display: flex; align-items: center; gap: 10px; padding-right: 16px;">
+        <div style="flex: 1; min-width: 0;">
+          <h2 style="margin: 0; font-size: 16px; line-height: 22px; font-weight: 600; color: #1F1F1F;">Добавить из этой же пробы</h2>
+          <p style="margin: 1px 0 0 0; font-size: 12px; line-height: 16px; font-weight: 400; color: #647180;">Без повторного забора — материал уже в&nbsp;лаборатории</p>
+        </div>
+        
+        <span style="flex: none; display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 4px; background: #FFF4D6;">
+          <span style="width: 7px; height: 7px; border-radius: 50%; background: #F5A400;"></span>
+          <span style="font-size: 12px; line-height: 16px; font-weight: 600; color: #A14E00; white-space: nowrap;">ещё 3&nbsp;ч 42&nbsp;мин</span>
+        </span>
+      </div>
+
+      <div style="margin-top: 12px; display: flex; align-items: stretch; gap: 10px;">
+        
+        <button type="button" role="checkbox" aria-checked="true" style="flex: none; width: 296px; box-sizing: border-box; margin: 0; padding: 12px; border-radius: 24px; background: #EAF3FF; border: 1px solid #0066B3; display: flex; flex-direction: column; align-items: stretch; text-align: left; font-family: inherit; color: #1F1F1F; cursor: pointer;">
+          <span style="display: flex; align-items: center; gap: 8px;">
+            <span style="flex: 1; min-width: 0; display: flex;">
+              <span style="display: block; max-width: 100%; box-sizing: border-box; padding: 2px 8px; border-radius: 4px; background: #E3EBF7; font-size: 12px; line-height: 16px; font-weight: 600; color: #123E7C; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">к анализу «Витамин D (25-OH)»</span>
+            </span>
+            <span style="flex: none; width: 22px; height: 22px; box-sizing: border-box; border-radius: 7px; background: #0066B3; border: 2px solid #0066B3; display: flex; align-items: center; justify-content: center;">
+              <svg width="13" height="13" aria-hidden="true" style="display: block; flex: none;" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5" /></svg>
+            </span>
+          </span>
+          <span style="display: block; margin-top: 8px; font-size: 14px; line-height: 20px; font-weight: 600; color: #1F1F1F;">Глюкоза</span>
+          <span style="display: block; margin-top: 4px; font-size: 12px; line-height: 16px; font-weight: 400; color: #1F1F1F;">Акция недели: к любому заказу за 1&nbsp;₸. Покажет сахар натощак — сдают раз в год.</span>
+          <span style="display: flex; margin-top: auto; padding-top: 10px; align-items: flex-end; justify-content: space-between; gap: 8px;">
+            <span style="flex: 1; min-width: 0; display: flex; align-items: center; flex-wrap: wrap; gap: 6px;">
+              <span style="font-size: 16px; line-height: 22px; font-weight: 700; color: #1F1F1F; white-space: nowrap;">1&nbsp;₸</span>
+              <s style="font-size: 12px; line-height: 16px; font-weight: 500; color: #647180; white-space: nowrap;">890&nbsp;₸</s>
+            </span>
+            <span style="flex: none; font-size: 12px; line-height: 16px; font-weight: 500; color: #647180; text-align: right; white-space: nowrap;">акция недели</span>
+          </span>
+          
+          <span style="display: block; margin-top: 6px; font-size: 12px; line-height: 16px; font-weight: 400; color: #1F1F1F;">Результат — в&nbsp;приложении завтра</span>
+        </button>
+
+        
+        <button type="button" role="checkbox" aria-checked="false" style="flex: none; width: 296px; box-sizing: border-box; margin: 0; padding: 12px; border-radius: 12px; background: #F2F6FB; border: 1px solid #D1DAE3; display: flex; flex-direction: column; align-items: stretch; text-align: left; font-family: inherit; color: #1F1F1F; cursor: pointer;">
+          <span style="display: flex; align-items: center; gap: 8px;">
+            <span style="flex: 1; min-width: 0; display: flex;">
+              <span style="display: block; max-width: 100%; box-sizing: border-box; padding: 2px 8px; border-radius: 4px; background: #E3EBF7; font-size: 12px; line-height: 16px; font-weight: 600; color: #123E7C; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">к анализу «Витамин D (25-OH)»</span>
+            </span>
+            <span style="flex: none; width: 22px; height: 22px; box-sizing: border-box; border-radius: 7px; background: #FFFFFF; border: 2px solid #D1DAE3;"></span>
+          </span>
+          <span style="display: block; margin-top: 8px; font-size: 14px; line-height: 20px; font-weight: 600; color: #1F1F1F;">Витамин B12</span>
+          <span style="display: block; margin-top: 4px; font-size: 12px; line-height: 16px; font-weight: 400; color: #1F1F1F;">К витамину D его добавляют 36%</span>
+          <span style="display: flex; margin-top: auto; padding-top: 10px; align-items: flex-end; justify-content: space-between; gap: 8px;">
+            <span style="flex: 1; min-width: 0; display: flex; align-items: center; flex-wrap: wrap; gap: 6px;">
+              <span style="font-size: 16px; line-height: 22px; font-weight: 700; color: #1F1F1F; white-space: nowrap;">2&nbsp;018&nbsp;₸</span>
+              <s style="font-size: 12px; line-height: 16px; font-weight: 500; color: #647180; white-space: nowrap;">2&nbsp;690&nbsp;₸</s>
+            </span>
+            <span style="flex: none; font-size: 12px; line-height: 16px; font-weight: 500; color: #647180; text-align: right; white-space: nowrap;">дешевле на&nbsp;25%</span>
+          </span>
+          <span style="display: block; margin-top: 6px; font-size: 12px; line-height: 16px; font-weight: 400; color: #1F1F1F;">Результат — в&nbsp;приложении через 2 дня</span>
+        </button>
+      </div>
+    </section>
+
+    
+    <section aria-label="Ход заказа" style="background: #FFFFFF; border-radius: 24px; overflow: hidden;">
+      <div style="display: flex; align-items: center; gap: 10px; padding: 16px;">
+        <h2 style="flex: 1; min-width: 0; margin: 0; font-size: 14px; line-height: 20px; font-weight: 600; color: #1F1F1F;">Статус заказа</h2>
+        <span style="flex: none; font-size: 12px; line-height: 16px; font-weight: 500; color: #647180;">iLab-48213</span>
+      </div>
+      <div style="height: 0.5px; background: #E3EBF7;"></div>
+      <ol style="list-style: none; margin: 0; padding: 0 16px 8px 16px;">
+        
+        <li style="position: relative; display: flex; align-items: flex-start; gap: 12px; padding: 8px 0;">
+          <span style="flex: none; width: 24px; height: 24px; border-radius: 50%; background: #008A44; display: flex; align-items: center; justify-content: center;">
+            <svg width="12" height="12" aria-hidden="true" style="display: block; flex: none;" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5" /></svg>
+          </span>
+          <div style="flex: 1; min-width: 0;">
+            <div style="font-size: 14px; line-height: 20px; font-weight: 500; color: #1F1F1F;">Кровь взята в ПК «Сарыарка»</div>
+            <div style="margin-top: 2px; font-size: 14px; line-height: 20px; font-weight: 400; color: #647180;">Выполнено · 10:25</div>
+          </div>
+          <span aria-hidden="true" style="position: absolute; left: 11px; top: 32px; bottom: -8px; width: 2px; background: #008A44;"></span>
+        </li>
+        
+        <li style="position: relative; display: flex; align-items: flex-start; gap: 12px; padding: 8px 0;">
+          <span style="flex: none; width: 24px; height: 24px; border-radius: 50%; background: #008A44; display: flex; align-items: center; justify-content: center;">
+            <svg width="12" height="12" aria-hidden="true" style="display: block; flex: none;" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5" /></svg>
+          </span>
+          <div style="flex: 1; min-width: 0;">
+            <div style="font-size: 14px; line-height: 20px; font-weight: 500; color: #1F1F1F;">Курьер забрал пробирки</div>
+            <div style="margin-top: 2px; font-size: 14px; line-height: 20px; font-weight: 400; color: #647180;">Выполнено · 12:40</div>
+          </div>
+          <span aria-hidden="true" style="position: absolute; left: 11px; top: 32px; bottom: -8px; width: 2px; background: #E3EBF7;"></span>
+        </li>
+        
+        <li style="position: relative; display: flex; align-items: flex-start; gap: 12px; padding: 8px 0;">
+          <span style="flex: none; position: relative; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;">
+            <span aria-hidden="true" style="position: absolute; left: -6px; top: -6px; width: 36px; height: 36px; box-sizing: border-box; border-radius: 50%; border: 2px solid rgba(26, 111, 224, 0.3);"></span>
+            <span style="width: 16px; height: 16px; border-radius: 50%; background: #0066B3;"></span>
+          </span>
+          <div style="flex: 1; min-width: 0;">
+            <div style="font-size: 14px; line-height: 20px; font-weight: 500; color: #1F1F1F;">В партнёрской лаборатории</div>
+            <div style="margin-top: 2px; font-size: 14px; line-height: 20px; font-weight: 400; color: #647180;">Сейчас</div>
+          </div>
+          <span aria-hidden="true" style="position: absolute; left: 11px; top: 32px; bottom: -8px; width: 2px; background: #E3EBF7;"></span>
+        </li>
+        
+        <li style="position: relative; display: flex; align-items: flex-start; gap: 12px; padding: 8px 0;">
+          <span style="flex: none; width: 24px; height: 24px; border-radius: 50%; background: #D1DAE3;"></span>
+          <div style="flex: 1; min-width: 0; padding-top: 2px; font-size: 14px; line-height: 20px; font-weight: 500; color: #647180;">Заказ частично готов</div>
+          <span aria-hidden="true" style="position: absolute; left: 11px; top: 32px; bottom: -8px; width: 2px; background: #E3EBF7;"></span>
+        </li>
+        <li style="position: relative; display: flex; align-items: flex-start; gap: 12px; padding: 8px 0;">
+          <span style="flex: none; width: 24px; height: 24px; border-radius: 50%; background: #D1DAE3;"></span>
+          <div style="flex: 1; min-width: 0; padding-top: 2px; font-size: 14px; line-height: 20px; font-weight: 500; color: #647180;">Ваш заказ готов</div>
+        </li>
+      </ol>
+    </section>
+
+    
+    <a href="#health-assessment" style="display: flex; align-items: center; gap: 6px; padding: 16px; background: #FFFFFF; border-radius: 24px; text-decoration: none; color: #1F1F1F;">
+      <svg width="24" height="24" aria-hidden="true" style="display: block; flex: none;" viewBox="0 0 24 24" fill="none" stroke="#008A44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke-dasharray="15.6 3.25" transform="rotate(-90 12 12)"/></svg>
+      <span style="flex: 1; min-width: 0; font-size: 14px; line-height: 20px; font-weight: 500; color: #1F1F1F;">После готовности результатов, вам будет доступна <span style="text-decoration: underline; text-decoration-color: #1F1F1F;">бесплатная расшифровка</span></span>
+    </a>
+
+    
+    <a href="#receipt" style="display: flex; align-items: center; gap: 6px; padding: 16px; background: #FFFFFF; border-radius: 24px; text-decoration: none;">
+      <svg width="28" height="28" aria-hidden="true" style="display: block; flex: none;" viewBox="0 0 24 24" fill="none" stroke="#1F1F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg>
+      <span style="flex: 1; min-width: 0; font-size: 14px; line-height: 20px; font-weight: 500; color: #1F1F1F;">Чек об оплате в .PDF</span>
+      <svg width="24" height="24" aria-hidden="true" style="display: block; flex: none;" viewBox="0 0 24 24" fill="none" stroke="#647180" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6" /></svg>
+    </a>
+
+    
+    <section aria-label="Детали заказа" style="background: #FFFFFF; border-radius: 24px; overflow: hidden;">
+      <div style="display: flex; align-items: center; padding: 0 16px;">
+        <h2 style="flex: 1; min-width: 0; margin: 0; padding: 16px 0; font-size: 14px; line-height: 20px; font-weight: 600; color: #1F1F1F;">Детали заказа</h2>
+        <div style="flex: none; display: flex; align-items: center; gap: 4px; padding: 16px 0 16px 10px;">
+          <svg width="16" height="16" aria-hidden="true" style="display: block; flex: none;" viewBox="0 0 24 24" fill="none" stroke="#1F1F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
+          <span style="font-size: 12px; line-height: 16px; font-weight: 500; color: #647180; white-space: nowrap;">1 день</span>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; padding: 16px; border-top: 0.5px solid #E3EBF7;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="font-size: 14px; line-height: 20px; font-weight: 500; color: #1F1F1F;">4 анализа: витамин D, ТТГ, ферритин, ОАК</div>
+          <div style="margin-top: 4px; font-size: 12px; line-height: 16px; font-weight: 500; color: #647180;">Дата готовности: 13.11.2026</div>
+        </div>
+        <div style="flex: none; width: 78px; text-align: right; font-size: 12px; line-height: 16px; font-weight: 700; color: #1F1F1F;">8&nbsp;971&nbsp;₸</div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; padding: 16px; border-top: 0.5px solid #E3EBF7;">
+        <div style="flex: 1; min-width: 0; font-size: 14px; line-height: 20px; font-weight: 500; color: #1F1F1F;">Забор — оплачен в пункте</div>
+        <div style="flex: none; width: 78px; text-align: right; font-size: 12px; line-height: 16px; font-weight: 700; color: #1F1F1F;">700&nbsp;₸</div>
+      </div>
+    </section>
+
+    
+    <section aria-label="Оплата" style="background: #FFFFFF; border-radius: 24px; overflow: hidden; padding: 16px;">
+      <div style="display: flex; align-items: center; gap: 12px; padding: 4px 0;">
+        <span style="flex: 1; min-width: 0; font-size: 14px; line-height: 20px; font-weight: 500; color: #647180;">Сумма анализов</span>
+        <span style="flex: none; font-size: 14px; line-height: 20px; font-weight: 600; color: #1F1F1F;">8&nbsp;971&nbsp;₸</span>
+      </div>
+      <div style="margin-top: 8px; padding-top: 10px; border-top: 0.5px solid #E3EBF7; display: flex; align-items: flex-start; gap: 12px;">
+        <span style="flex: 1; min-width: 0; display: flex; align-items: center; gap: 8px; font-size: 16px; line-height: 22px; font-weight: 700; color: #1F1F1F;"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #008A44;"></span>Оплачено</span>
+        <div style="flex: none; display: flex; flex-direction: column; align-items: flex-end;">
+          <span style="font-size: 16px; line-height: 22px; font-weight: 700; color: #1F1F1F;">8&nbsp;971&nbsp;₸</span>
+          <span style="margin-top: 6px; padding: 6px 12px; border-radius: 30px; background: #F2F6FB; font-size: 14px; line-height: 20px; font-weight: 600; color: #1F1F1F;">+ 449&nbsp;Б</span>
+        </div>
+      </div><div style="margin-top:12px;display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:12px;background:#FFEA3D;"><span style="flex:1;font-size:14px;line-height:19px;font-weight:600;color:#16202B;">Вы сэкономили по сравнению с другими лабораториями</span><span style="flex:none;font-size:18px;line-height:22px;font-weight:800;color:#16202B;white-space:nowrap;">7&nbsp;629&nbsp;₸</span></div>
+    </section>
+
+    
+    <section aria-label="Что дальше" style="background: #FFFFFF; border-radius: 24px; overflow: hidden;">
+      <h2 style="margin: 0; padding: 16px; font-size: 14px; line-height: 20px; font-weight: 600; color: #1F1F1F;">Что дальше</h2>
+      <div style="display: flex; align-items: flex-start; gap: 6px; padding: 16px; border-top: 0.5px solid #E3EBF7;">
+        <svg width="28" height="28" aria-hidden="true" style="display: block; flex: none;" viewBox="0 0 24 24" fill="none" stroke="#1F1F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" /></svg>
+        <div style="flex: 1; min-width: 0; padding-top: 4px; font-size: 14px; line-height: 20px; font-weight: 500; color: #1F1F1F;">Пришлём уведомление, когда результат будет готов</div>
+      </div>
+      <div style="display: flex; align-items: flex-start; gap: 6px; padding: 16px; border-top: 0.5px solid #E3EBF7;">
+        <svg width="28" height="28" aria-hidden="true" style="display: block; flex: none;" viewBox="0 0 24 24" fill="none" stroke="#1F1F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M12 8l1.1 2.9L16 12l-2.9 1.1L12 16l-1.1-2.9L8 12l2.9-1.1z"/></svg>
+        <div style="flex: 1; min-width: 0; padding-top: 4px;">
+          <div style="font-size: 14px; line-height: 20px; font-weight: 500; color: #1F1F1F;">Врач-ассистент объяснит отклонения</div>
+          <div style="margin-top: 2px; font-size: 12px; line-height: 16px; font-weight: 400; color: #647180;">Простыми словами: что значат показатели и&nbsp;к&nbsp;какому врачу обратиться</div>
+          
+          <button type="button" style="margin-top: 10px; height: 48px; padding: 0 18px; border: 0; border-radius: 24px; background: #EAF3FF; color: #0066B3; font-family: inherit; font-size: 14px; line-height: 20px; font-weight: 600; cursor: pointer;">Спросить ассистента</button>
+        </div>
+      </div>
+    </section>
+
+    
+    <section aria-label="Сдачи по плану" style="background: #FFFFFF; border-radius: 24px; overflow: hidden;">
+      <div style="display: flex; align-items: center; gap: 6px; padding: 16px;">
+        <svg width="20" height="20" aria-hidden="true" style="display: block; flex: none;" viewBox="0 0 24 24" fill="none" stroke="#1F1F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M8 2v3" /><path d="M16 2v3" /><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /></svg>
+        <h2 style="flex: 1; min-width: 0; margin: 0; font-size: 14px; line-height: 20px; font-weight: 600; color: #1F1F1F;">Сдачи по плану</h2>
+      </div>
+      <div style="padding: 16px; border-top: 0.5px solid #E3EBF7;">
+        <div style="font-size: 14px; line-height: 20px; font-weight: 600; color: #1F1F1F;">Контроль через 3 месяца — витамин D</div>
+        <div style="margin-top: 4px; font-size: 14px; line-height: 20px; font-weight: 500; color: #647180;">Ближайшая сдача: 12.02.2027</div>
+        <div style="margin-top: 2px; font-size: 12px; line-height: 16px; font-weight: 600; color: #00703C;">Пункт у дома</div>
+        <div style="margin-top: 8px; font-size: 12px; line-height: 16px; font-weight: 400; color: #1F1F1F;">Если витамин D окажется ниже нормы — повтор покажет, сработала ли коррекция</div>
+        <div style="margin-top: 12px; padding-top: 12px; border-top: 0.5px solid #E3EBF7; display: flex; align-items: center; gap: 12px;">
+          <span style="flex: 1; min-width: 0; font-size: 14px; line-height: 20px; font-weight: 500; color: #647180;">Контроль 4 анализов</span>
+          <span style="flex: none; font-size: 14px; line-height: 20px; font-weight: 600; color: #1F1F1F;">8&nbsp;970&nbsp;₸</span>
+        </div>
+        <button type="button" style="margin-top: 12px; width: 100%; height: 48px; padding: 0 16px; border: 0; border-radius: 24px; background: #EAF3FF; color: #0066B3; font-family: inherit; font-size: 14px; line-height: 20px; font-weight: 600; cursor: pointer;">Добавить в план</button>
+        <p style="margin: 8px 0 0 0; font-size: 12px; line-height: 16px; font-weight: 400; color: #647180; text-align: center;">[условия плана: когда списываем]</p>
+      </div>
+    </section>
+
+    
+    <div style="background: #FFFFFF; border-radius: 24px; padding: 16px;">
+      <div style="font-size: 12px; line-height: 16px; font-weight: 500; color: #647180;">Адрес</div>
+      <div style="margin-top: 4px; display: flex; align-items: flex-start; gap: 6px;">
+        <svg width="22" height="22" aria-hidden="true" style="display: block; flex: none;" viewBox="0 0 24 24" fill="none" stroke="#1F1F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+        <div style="flex: 1; min-width: 0; font-size: 16px; line-height: 22px; font-weight: 500; color: #1F1F1F;">ПК «Сарыарка», ул. Сарыарка, 17</div>
+      </div>
+    </div>
+
+    
+    <button type="button" style="flex: none; width: 100%; height: 48px; padding: 0 24px; border: 0; border-radius: 12px; background: transparent; color: #647180; font-family: inherit; font-size: 14px; line-height: 20px; font-weight: 600; cursor: pointer;">Написать в тех. поддержку</button>
+
+  </main>
+
+  
+  <div style="position:fixed; left: 0; right: 0; bottom: 0; background: #FFFFFF; padding: 16px; display: flex; flex-direction: column; gap: 8px; z-index: 20;">
+    <button type="button" onClick="{{gl}}" style="display: flex; align-items: center; justify-content: center; gap: 6px; width: 100%; height: 48px; padding: 0 24px; border: 0; border-radius: 24px; background: {{glBg}}; color: #FFFFFF; font-family: inherit; font-size: 14px; line-height: 20px; font-weight: 600; cursor: pointer;"><sc-if value="{{glOff}}" hint-placeholder-val="{{false}}"><span>Добавить глюкозу · 1&nbsp;₸</span></sc-if><sc-if value="{{glOn}}" hint-placeholder-val="{{false}}"><span style="display:flex;align-items:center;gap:6px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;flex:none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5" /></svg>Глюкоза добавлена · 1&nbsp;₸</span></sc-if></button>
+    <p style="margin: 0; font-size: 12px; line-height: 16px; font-weight: 400; color: #647180; text-align: center;">Без повторного забора — из той же пробирки</p>
+  </div>
+<sc-if value="{{tNo}}" hint-placeholder-val="{{false}}"><div role="status" style="position:fixed;left:16px;right:16px;bottom:104px;z-index:30;display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:14px;background:#16202B;color:#FFFFFF;font-size:14px;line-height:20px;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,.25);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFEA3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;flex:none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5" /></svg>Номер заказа iLab-48213 скопирован</div></sc-if><sc-if value="{{tGl}}" hint-placeholder-val="{{false}}"><div role="status" style="position:fixed;left:16px;right:16px;bottom:104px;z-index:30;display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:14px;background:#16202B;color:#FFFFFF;font-size:14px;line-height:20px;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,.25);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFEA3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;flex:none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5" /></svg>Глюкоза добавлена из той же пробирки</div></sc-if></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":2358}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = {"gl": false}; }
+  renderVals() {
+    const T = /*I18N*/{}/*END*/;
+    const s = this.state || {};
+    const set = (o) => this.setState(o);
+    const v = {};
+    const flash = (k) => { set({toast: k}); setTimeout(() => this.setState({toast: ''}), 1800); };
+    const g = !!s.gl; v.glOn = g; v.glOff = !g; v.glBg = g ? '#12A150' : '#0066B3'; v.gl = () => { set({gl: !g}); if (!g) flash('gl'); };
+    v.copyNo = () => flash('no'); v.tNo = s.toast === 'no'; v.tGl = s.toast === 'gl';
+
+    return v;
+  }
+}
+</script>
+</body>
+</html>
