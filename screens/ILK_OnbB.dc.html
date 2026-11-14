@@ -42,7 +42,7 @@ const fm = (x) => x.toLocaleString('ru-RU').replace(/\u202f|\u00a0/g, '\u00a0') 
     v.pw = s.pw || '0%';
     v.go = () => { set({st: 1, pw: '0%'}); setTimeout(() => this.setState({pw: '100%'}), 60); setTimeout(() => this.setState({st: 2}), 1450); };
     v.back = () => set({st: 0});
-    const map = {"tired": ["ferr", "vitd", "tsh", "b12"], "hair": ["ferr", "tsh", "vitd"], "weight": ["gluc", "ins", "tsh", "lipid"], "long": ["oak", "gluc", "chol", "alt"], "preg": ["oak", "ferr", "tsh", "vitd"], "heart": ["lipid", "crp", "gluc"]}, tests = {"oak": [1190, 1880], "ferr": [2390, 3100], "vitd": [4490, 8200], "tsh": [2090, 3420], "b12": [2690, 4640], "gluc": [890, 1780], "ins": [2560, 5120], "lipid": [2840, 5680], "chol": [890, 1780], "alt": [890, 1780], "crp": [1240, 2480]};
+    const map = {"tired": ["ferr", "vitd", "tsh", "b12"], "hair": ["ferr", "tsh", "vitd"], "weight": ["gluc", "ins", "tsh", "lipid"], "long": ["oak", "gluc", "chol", "alt"], "preg": ["oak", "ferr", "tsh", "vitd"], "heart": ["lipid", "crp", "gluc"]}, tests = {"oak": [970, 1880], "ferr": [1980, 3100], "vitd": [4890, 8200], "tsh": [1980, 3420], "b12": [3115, 4640], "gluc": [499, 1780], "ins": [3430, 5120], "lipid": [4625, 5680], "chol": [950, 1780], "alt": [999, 1780], "crp": [1490, 2480]};
     const ids = []; chosen.forEach(c => map[c].forEach(t => { if (ids.indexOf(t) < 0) ids.push(t); }));
     let sum = 0, oth = 0; v.items = ids.map(t => { sum += tests[t][0]; oth += tests[t][1]; return {name: T['t_' + t], price: fm(tests[t][0]), old: fm(tests[t][1])}; });
     const disc = Math.round(sum * 0.2), fin = sum - disc;
